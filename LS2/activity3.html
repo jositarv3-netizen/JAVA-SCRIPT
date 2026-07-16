@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1 style="color:green">Codingual Education</h1>
+        <h1> Function Declaration </h1>
+
+        <button onclick="addition(5,8)">addition</button>
+        <p id="add"></p>
+        <button onclick="subtraction(5,8)">subtraction</button>
+        <p id="sub"></p>
+        <script>
+            var result = function (a, b) { return a * b };
+            document.write(result(5, 8))
+            function addition(a, b) {
+                document.getElementById("add").innerHTML = a + b;
+            }
+
+            function subtraction(a, b) {
+                document.getElementById("sub").innerHTML = a - b;
+            }
+
+        </script>
+    </center>
+</body>
+
+</html>
